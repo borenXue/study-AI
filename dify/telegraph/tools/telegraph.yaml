@@ -1,0 +1,30 @@
+identity:
+  name: "telegraph"
+  author: "xue-boren"
+  label:
+    en_US: "telegraph"
+    zh_Hans: "telegraph"
+    pt_BR: "telegraph"
+description:
+  human:
+    en_US: "A Telegraph plugin that allows you to publish your content easily"
+    zh_Hans: "A Telegraph plugin that allows you to publish your content easily"
+    pt_BR: "A Telegraph plugin that allows you to publish your content easily"
+  llm: "A Telegraph plugin that allows you to publish your content easily"
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: "A Telegraph plugin that allows you to publish your content easily"
+      zh_Hans: "A Telegraph plugin that allows you to publish your content easily"
+      pt_BR: "A Telegraph plugin that allows you to publish your content easily"
+    llm_description: "A Telegraph plugin that allows you to publish your content easily"
+    form: llm
+extra:
+  python:
+    source: tools/telegraph.py
