@@ -1,0 +1,11 @@
+name: base
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.12.8=h99e199e_0
+  - pip=25.0=py312hca03da5_0
+  # - pip:
+  #   - tiktoken==0.11.0
+  #   - tokenizers==0.22.0
+prefix: ~/miniconda3
