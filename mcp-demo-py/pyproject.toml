@@ -1,11 +1,64 @@
 [project]
-name = "mcp-demo-py"
+name = "mcp-demo-py"  # 唯一不能标记为动态的字段
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
+# dynamic = ["version"]  # eg: 代码中的 __version__ 属性、Git 标签或类似对象中读取版本信息
 dependencies = [
     "mcp==1.6.0",
     "mcp-server-fetch==2025.1.17",
     "mcp-server-git==2025.1.14",
 ]
+
+[project.optional-dependencies]
+# gui = ["PyQt5"] # pip install your-project-name[gui]
+
+
+# 将命令安装为包的一部分
+[project.scripts]
+# spam-cli = "spam:main_cli"
+[project.gui-scripts]
+# spam-gui = "spam:main_gui"
+
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/me/spam.git"
+Issues = "https://github.com/me/spam/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+"Download Link" = "https://example.com/abc.tar.gz"
+
+
+
+
+
+
+[[tool.uv.index]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple/"
+
+
+
+
+# [tool.uv.sources]
+# torch = { index = "pytorch" }
+# torch = [
+#   { index = "pytorch-cu118", marker = "sys_platform == 'darwin'"},
+#   { index = "pytorch-cu124", marker = "sys_platform != 'darwin'"},
+# ]
+
+# [[tool.uv.index]]
+# name = "pytorch-cu118"
+# url = "https://download.pytorch.org/whl/cu118"
+
+# [[tool.uv.index]]
+# name = "pytorch-cu124"
+# url = "https://download.pytorch.org/whl/cu124"
+
+# [[tool.uv.index]]
+# name = "pytorch"
+# url = "https://download.pytorch.org/whl/cpu"
+
+
